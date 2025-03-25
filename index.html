@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas - Smart Financial Insights</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .bg-primary { background-color: #38FF9F !important; }
+    .bg-secondary { background-color: #467D6B !important; }
+    .bg-accent { background-color: #08313A !important; }
+    .text-accent { color: #08313A !important; }
+    .text-secondary { color: #467D6B !important; }
+    .btn-primary { background-color: #08313A !important; color: #ffffff !important; }
+    .btn-primary:hover { background-color: #467D6B !important; }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+  <header class="bg-accent shadow-sm">
+    <nav class="max-w-6xl mx-auto px-4 py-5 flex justify-between items-center">
+      <div class="text-2xl font-bold text-white">Atlas</div>
+      <div>
+        <a href="#features" class="text-gray-200 hover:text-primary mx-3">Features</a>
+        <a href="#contact" class="text-gray-200 hover:text-primary mx-3">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="max-w-6xl mx-auto py-20 px-4 text-center bg-primary">
+      <h1 class="text-4xl md:text-5xl font-bold text-accent mb-6">Financial clarity, powered by Atlas</h1>
+      <p class="text-accent mb-10">Atlas helps you optimize your finances with real-time insights, personalized recommendations, and intelligent money moves.</p>
+      <button class="btn-primary font-medium px-6 py-3 rounded-lg shadow-md">Get Early Access</button>
+    </section>
+
+    <section id="features" class="bg-white py-16">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+
+        <div class="p-6 bg-secondary rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold text-white mb-2">AI-Powered Advice</h3>
+          <p class="text-gray-100">Personalized recommendations tailored specifically to your financial habits and goals.</p>
+        </div>
+
+        <div class="p-6 bg-secondary rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold text-white mb-2">Real-Time Tracking</h3>
+          <p class="text-gray-100">Instant insights into your spending, saving, and investment behaviors.</p>
+        </div>
+
+        <div class="p-6 bg-secondary rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold text-white mb-2">Secure & Private</h3>
+          <p class="text-gray-100">Bank-level encryption and security ensure your financial data stays private.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="max-w-4xl mx-auto py-16 px-4 text-center">
+      <h2 class="text-3xl font-bold text-accent mb-4">Stay in the loop</h2>
+      <p class="text-gray-600 mb-8">Join our waitlist to be among the first to experience Atlas.</p>
+
+      <form class="flex justify-center">
+        <input type="email" placeholder="Your email" required class="w-64 p-3 border rounded-l-lg focus:outline-none">
+        <button type="submit" class="btn-primary px-6 py-3 rounded-r-lg">Join Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-accent py-6">
+    <div class="max-w-6xl mx-auto text-center text-gray-300">
+      &copy; 2025 Atlas. All rights reserved.
+    </div>
+  </footer>
+</body>
+
+</html>
