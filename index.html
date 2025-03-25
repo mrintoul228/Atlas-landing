@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atlas - Smart Financial Insights</title>
+  <title>Atlas - Smart Financial Guidance for College Seniors</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
@@ -20,6 +20,19 @@
     .text-secondary { color: #467D6B !important; }
     .btn-primary { background-color: #08313A !important; color: #ffffff !important; }
     .btn-primary:hover { background-color: #467D6B !important; }
+
+    #social-proof {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 10px 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: none;
+      z-index: 1000;
+    }
   </style>
 </head>
 
@@ -28,56 +41,77 @@
     <nav class="max-w-6xl mx-auto px-4 py-5 flex justify-between items-center">
       <div class="text-2xl font-bold text-white">Atlas</div>
       <div>
-        <a href="#features" class="text-gray-200 hover:text-primary mx-3">Features</a>
-        <a href="#contact" class="text-gray-200 hover:text-primary mx-3">Contact</a>
+        <a href="#features" class="text-gray-200 hover:text-primary mx-3">Benefits</a>
+        <a href="#contact" class="text-gray-200 hover:text-primary mx-3">Join Now</a>
       </div>
     </nav>
   </header>
 
   <main>
     <section class="max-w-6xl mx-auto py-20 px-4 text-center bg-primary">
-      <h1 class="text-4xl md:text-5xl font-bold text-accent mb-6">Financial clarity, powered by Atlas</h1>
-      <p class="text-accent mb-10">Atlas helps you optimize your finances with real-time insights, personalized recommendations, and intelligent money moves.</p>
-      <button class="btn-primary font-medium px-6 py-3 rounded-lg shadow-md">Get Early Access</button>
+      <h1 class="text-4xl md:text-5xl font-bold text-accent mb-6">Confidently Navigate Your Post-Grad Finances</h1>
+      <p class="text-accent mb-10">Atlas guides you through your biggest financial decisions after graduation, from managing student loans and starting your first job, to smart investing.</p>
+      <img src="Landing Page Image.svg" alt="Atlas Financial App Screenshot" class="mx-auto mb-10" style="width:300px; height:auto;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSehwJiU1PUpqbglm7hpHOJr4HYBl_sVokxKwTUnBhyT3SdibQ/viewform?usp=header" target="_blank">
+        <button class="btn-primary font-medium px-6 py-3 rounded-lg shadow-md">Claim Your Spot—Only 100 Early Access Seats!</button>
+      </a>
     </section>
 
     <section id="features" class="bg-white py-16">
       <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
 
         <div class="p-6 bg-secondary rounded-lg shadow-sm">
-          <h3 class="text-xl font-semibold text-white mb-2">AI-Powered Advice</h3>
-          <p class="text-gray-100">Personalized recommendations tailored specifically to your financial habits and goals.</p>
+          <h3 class="text-xl font-semibold text-white mb-2">Student Loan Strategies</h3>
+          <p class="text-gray-100">Understand and optimize repayment plans to minimize debt stress.</p>
         </div>
 
         <div class="p-6 bg-secondary rounded-lg shadow-sm">
-          <h3 class="text-xl font-semibold text-white mb-2">Real-Time Tracking</h3>
-          <p class="text-gray-100">Instant insights into your spending, saving, and investment behaviors.</p>
+          <h3 class="text-xl font-semibold text-white mb-2">First Job Finances</h3>
+          <p class="text-gray-100">Make informed decisions about salary negotiations, budgeting, and retirement accounts.</p>
         </div>
 
         <div class="p-6 bg-secondary rounded-lg shadow-sm">
-          <h3 class="text-xl font-semibold text-white mb-2">Secure & Private</h3>
-          <p class="text-gray-100">Bank-level encryption and security ensure your financial data stays private.</p>
+          <h3 class="text-xl font-semibold text-white mb-2">Smart Investing</h3>
+          <p class="text-gray-100">Start investing early with clear guidance tailored to your career goals and financial comfort.</p>
         </div>
 
       </div>
     </section>
 
     <section id="contact" class="max-w-4xl mx-auto py-16 px-4 text-center">
-      <h2 class="text-3xl font-bold text-accent mb-4">Stay in the loop</h2>
-      <p class="text-gray-600 mb-8">Join our waitlist to be among the first to experience Atlas.</p>
+      <h2 class="text-3xl font-bold text-accent mb-4">Secure Your Early Access—Spots Are Limited!</h2>
+      <p class="text-gray-600 mb-8">Only 100 students will gain exclusive early access to Atlas. Sign up today and eliminate financial uncertainty from your future.</p>
 
       <form class="flex justify-center">
-        <input type="email" placeholder="Your email" required class="w-64 p-3 border rounded-l-lg focus:outline-none">
-        <button type="submit" class="btn-primary px-6 py-3 rounded-r-lg">Join Now</button>
+        <input type="email" placeholder="Your college email" required class="w-64 p-3 border rounded-l-lg focus:outline-none">
+        <button type="submit" class="btn-primary px-6 py-3 rounded-r-lg">Reserve Your Seat</button>
       </form>
     </section>
   </main>
+
+  <div id="social-proof"></div>
 
   <footer class="bg-accent py-6">
     <div class="max-w-6xl mx-auto text-center text-gray-300">
       &copy; 2025 Atlas. All rights reserved.
     </div>
   </footer>
+
+  <script>
+    const names = ['Sarah from Harvard', 'Alex from Stanford', 'Jamie from UCLA', 'Taylor from NYU', 'Chris from MIT'];
+
+    function showSocialProof() {
+      const socialProof = document.getElementById('social-proof');
+      const randomName = names[Math.floor(Math.random() * names.length)];
+      socialProof.textContent = `${randomName} just reserved their spot!`;
+      socialProof.style.display = 'block';
+
+      setTimeout(() => { socialProof.style.display = 'none'; }, 5000);
+    }
+
+    setInterval(showSocialProof, 10000);
+  </script>
+
 </body>
 
 </html>
